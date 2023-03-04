@@ -1,0 +1,54 @@
+.listSearchResults li {
+    list-style-type: none;
+}
+
+.listSearchResults img {
+    width: 9rem;
+    display: block;
+    margin: auto;
+}
+
+.listSearchResults .pepConct .card i {
+    color: var(--third-color);
+}
+
+.listSearchResults .pepConct .card .card-body span {
+    font-size: 1.8rem;
+}
+
+.listSearchResults .pepConct .card span {
+    font-size: 1.4rem;
+    margin-left: 0.5rem;
+}
+
+.listSearchResults .pepConct .card .btn {
+    font-size: 1.4rem;
+}
+
+.listSearchResults .mPep {
+    margin: 5rem 0;
+}
+
+.listSearchResults .mPep .card i {
+    font-size: 1.5rem;
+    color: var(--third-color);
+}
+
+.listSearchResults .mPep .card span {
+    font-size: 1.3rem;
+    margin-left: 0.5rem;
+}
+
+.listSearchResults .mPep .card .btn {
+    font-size: 1.4rem;
+}
+
+.listSearchResults .nfAdsCard {
+	box-shadow: 0 0 0.9rem 0.3rem var(--fourth-color) !important;
+}
+
+.listSearchResults .adsImage {
+	width: 20rem;
+	display: block;
+	margin: auto;
+}

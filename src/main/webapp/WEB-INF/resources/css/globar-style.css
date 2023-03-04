@@ -1,0 +1,108 @@
+/* common code for all pages */
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+:root {
+    --primary-color: #012e58;
+    --secondary-color: #808080;
+    --third-color: #675cff;
+    --fourth-color: #e2eeff;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+}
+
+.cursor:hover {
+    cursor: pointer;
+}
+
+ul {
+    padding-left: 0rem !important;
+}
+
+.errMsg {
+    font-size: 1.5rem;
+    color: red;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 0.9rem;
+    text-indent: 3rem;
+    display: none;
+    background: #b6c4d938;
+    padding: 0.3rem 1rem;
+}
+
+/* common header section */
+.cusHeader {
+    border-bottom: 0.2rem solid var(--fourth-color);
+}
+
+.cusHeader a {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.hrDivBar {
+    display: inline-block;
+    border: 0.2rem solid black;
+    border-right: none;
+    border-top: none;
+    border-bottom: none;
+    min-height: 5rem;
+}
+
+.cusHeaderNav {
+    box-shadow: 0rem 0.3rem 0.5rem var(--fourth-color) !important;
+}
+
+.cusHeaderNav a {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.cusHeaderNav i {
+    color: var(--bs-link-color);
+    font-weight: bold;
+}
+
+.cusHeaderNav select {
+    font-size: 1.1rem;
+    font-weight: bold;
+    background: transparent;
+    border: none;
+    outline: none;
+    box-shadow: 0 0.5rem 1rem var(--fourth-color) !important;
+    color: var(--bs-nav-link-color);
+    font-weight: bolder;
+    font-size: 1.4rem;
+}
+
+.cusHeaderNav select option {
+    color: var(--bs-nav-link-color);
+    font-weight: bolder;
+}
+
+/* common responsive section */
+@media screen and (max-width: 991px) {
+    html {
+        font-size: 55.5%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    html {
+        font-size: 47.5%;
+    }
+}

@@ -1,0 +1,106 @@
+.dashNavbar .cusHeaderImg {
+    width: 7.5rem;
+    height: 7.5rem;
+}
+
+.dashNavbar .cusUserImg {
+    width: 7.5rem;
+    height: 7.5rem;
+}
+
+.dashNavbar .cusHeaderTitle {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.dashNavbar input[type="search"] {
+    width: 87%;
+    height: 5rem;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 2.4rem;
+    text-indent: 0.7rem;
+}
+
+.dashNavbar .dashIcons {
+    padding-left: 0.5rem;
+    margin-bottom: 0rem;
+}
+
+.dashNavbar .dashIcons li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+.dashNavbar .cusHeaderElearing {
+    font-size: 1.7rem;
+}
+
+.dashNavbar .cusHeaderLogIn {
+    font-size: 1.4rem;
+}
+
+.dashNavbar i {
+    color: var(--third-color);
+}
+
+@media (min-width: 992px) {
+    .text-lg-end {
+        text-align: center !important;
+    }
+}
+
+.dashNavbar .searchResultBox {
+    width: 100%;
+    left: 0;
+    top: 100%;
+    position: absolute;
+    z-index: 1 !important;
+    border-radius: 0.7rem;
+    display: none;
+}
+
+.dashNavbar .searchResultBox ul {
+    padding-left: 0rem;
+}
+
+.dashNavbar .searchResultBox li {
+    list-style-type: none;
+    font-size: 1.6rem;
+    background: var(--fourth-color);
+    padding: 0.3rem 0.9rem;
+}
+
+.dashNavbar .noti {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dashNavbar .noti:active {
+    background: #cccccc;
+}
+
+.dashNavbar .notiCount {
+    position: absolute;
+    top: -1.4rem;
+    left: -1rem;
+    font-size: 1.3rem;
+    color: var(--primary-color);
+    background: var(--fourth-color);
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dashNavbar .iconHeartButton {
+    outline: none;
+    border: none;
+    background: none;
+}

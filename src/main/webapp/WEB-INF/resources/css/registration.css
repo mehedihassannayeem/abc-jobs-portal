@@ -1,0 +1,109 @@
+.container-fluid.regForm {
+    background: linear-gradient(
+            rgba(255, 255, 255, 0.5),
+            rgba(255, 255, 255, 0.5)
+        ),
+        url("../images/abc-content/register.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.regForm img {
+    width: 9rem;
+}
+
+.regForm h2 {
+    font-size: 3rem;
+}
+
+.regForm input[type="text"],
+.regForm input[type="password"],
+.regForm input[type="email"] {
+    width: 95%;
+    height: 5rem;
+    border: none;
+    outline: none;
+    border-bottom: 0.3rem solid var(--fourth-color);
+    margin: 1.5rem 0;
+    font-size: 1.6rem;
+    text-indent: 1.5rem;
+    letter-spacing: 0.1rem;
+}
+
+.regForm input[type="checkbox"] + span {
+    font-size: 1.7rem;
+    margin-left: 1.5rem;
+}
+
+.regForm input[type="checkbox"]:checked + span {
+    color: var(--third-color);
+}
+
+.regForm input[type="submit"] {
+    font-size: 2rem;
+    color: var(--fourth-color);
+    background: var(--primary-color);
+    border: none;
+    outline: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 1rem;
+    font-weight: bolder;
+    transition: all 0.3s;
+}
+
+.regForm .leftSide {
+    margin-top: 5%;
+}
+
+.regForm .leftSide > div {
+    margin-bottom: 5rem;
+}
+
+.regForm .info h2 {
+    font-weight: bolder;
+    font-size: 2.5rem;
+}
+
+.regForm .info p {
+    font-size: 1.8rem;
+}
+
+.regForm .info {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.regForm input[type="submit"]:hover {
+    box-shadow: -0.3rem -0.3rem 0.7rem #e2eeff, 0.3rem 0.3rem 0.5rem #e2eeff !important;
+}
+
+.regForm h3:nth-child(1) {
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+
+.regForm h3:nth-child(2) {
+    font-weight: bold;
+}
+
+.regForm .containerBox {
+    width: 90%;
+}
+
+.regForm i {
+    color: var(--third-color);
+    box-shadow: 0 0 0.9rem 0.3rem var(--third-color) !important;
+    padding: 0.5rem;
+    border-radius: 0.6rem;
+    transition: all 0.5s;
+    background-color: white;
+}
+
+.regForm i:hover {
+    box-shadow: 0 0 0.9rem 0.3rem var(--fourth-color) !important;
+}
+
+.regForm .btn {
+    font-size: 1.6rem;
+    width: 12rem;
+}

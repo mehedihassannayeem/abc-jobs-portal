@@ -1,0 +1,355 @@
+.sidebar {
+    position: static;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 25rem;
+    z-index: 1;
+    transition: all 0.5s ease;
+}
+
+.sidebar.close {
+    width: 5.5rem;
+}
+
+.sidebar .fa-bars-staggered {
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.sidebar .nav-links {
+    height: 100%;
+    padding: 2rem 0 0rem 0 !important;
+    overflow: auto;
+}
+
+.sidebar.close .nav-links {
+    overflow: visible;
+}
+
+.sidebar .nav-links::-webkit-scrollbar {
+    display: none;
+}
+
+.sidebar .nav-links li {
+    position: relative;
+    list-style: none;
+    transition: all 0.4s ease;
+    margin-bottom: 0rem;
+}
+
+.sidebar .nav-links li:hover {
+    background: #e2eeff;
+}
+
+.sidebar .nav-links li .iocn-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sidebar.close .nav-links li .iocn-link {
+    display: block;
+}
+
+.sidebar .nav-links li i {
+    min-width: 6rem;
+    text-align: center;
+    line-height: 4rem;
+    color: var(--third-color);
+    font-size: 2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.sidebar .nav-links li i.bi-person-circle {
+    font-size: 4rem;
+}
+
+.sidebar .nav-links li.showMenu i.fa-caret-down {
+    transform: rotate(-180deg);
+}
+
+.sidebar.close .nav-links i.fa-caret-down {
+    display: none;
+}
+
+.sidebar .nav-links li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.sidebar .nav-links li a .link_name {
+    font-size: 1.5rem;
+    color: var(--third-color);
+    font-weight: bold;
+    transition: all 0.4s ease;
+}
+
+.sidebar.close .nav-links li a .link_name {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.sidebar .nav-links li .sub-menu {
+    padding: 0rem 0rem 1.5rem 4.5rem !important;
+    margin-top: -0.4rem;
+    background: #fafbfc;
+    width: 25rem;
+    display: none;
+}
+
+.sidebar .nav-links li.showMenu .sub-menu {
+    display: block;
+}
+
+.sidebar .nav-links li .sub-menu a {
+    color: var(--primary-color);
+    font-size: 1.4rem;
+    padding: 0.5rem 0 !important;
+    white-space: nowrap;
+    font-weight: bolder;
+    transition: all 0.3s ease;
+}
+
+.sidebar.close .nav-links li .sub-menu {
+    position: absolute;
+    left: 100%;
+    top: -1.5rem;
+    margin-top: 0;
+    padding: 0rem 0rem 0rem 1rem !important;
+    border-radius: 0 0.6rem 0.6rem 0;
+    width: 21rem;
+    opacity: 0;
+    display: block;
+    pointer-events: none;
+    transition: 0s;
+}
+
+.sidebar.close .nav-links li:hover .sub-menu {
+    top: 0;
+    opacity: 1;
+    pointer-events: auto;
+    transition: all 0.4s ease;
+}
+
+.sidebar .nav-links li .sub-menu a:hover {
+    opacity: 1;
+}
+
+.sidebar .nav-links li .sub-menu .link_name {
+    display: none;
+}
+
+.sidebar.close .nav-links li .sub-menu .link_name {
+    font-size: 1.6rem;
+    color: var(--third-color);
+    opacity: 1;
+    display: block;
+}
+
+.sidebar .nav-links li .sub-menu.blank {
+    opacity: 1;
+    pointer-events: auto;
+    padding: 0.3rem 2rem 0.6rem 1.6rem;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.sidebar .nav-links li:hover .sub-menu.blank {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.sidebar .profile-details {
+    position: static;
+    margin-top: 3rem;
+    width: 25rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.2rem 0;
+    transition: all 0.5s ease;
+    box-shadow: -0.3rem -0.3rem 0.7rem #ffffff, 0.3rem 0.3rem 0.5rem #ceced1 !important;
+}
+
+.sidebar.close .profile-details {
+    background: none;
+    box-shadow: none !important;
+}
+
+.sidebar.close .profile-details {
+    width: 5.5rem;
+}
+
+.sidebar .profile-details .profile-content {
+    display: flex;
+    align-items: center;
+}
+
+.sidebar .profile-details img {
+    height: 5.2rem;
+    width: 5.2rem;
+    object-fit: cover;
+    border-radius: 1.6rem;
+    margin: 0 1.4rem 0rem 1.2rem;
+    transition: all 0.5s ease;
+}
+
+.sidebar.close .profile-details img {
+    margin: 0 1.4rem 0rem 0.1rem;
+    padding: 1rem;
+}
+
+.sidebar .profile-details .username,
+.sidebar .profile-details .logout {
+    font-size: 1.4rem;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.sidebar.close .profile-details i.bi-person-circle {
+    margin: 0 1.4rem 0rem 0.1rem;
+    padding: 1rem;
+}
+
+.sidebar.close .profile-details i,
+.sidebar.close .profile-details .username,
+.sidebar.close .profile-details .logout {
+    display: none;
+}
+
+.sidebar.close .profile-details i.bi-person-circle {
+    display: block;
+    font-size: 3rem;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.sidebar .profile-details .logout {
+    font-size: 1.2rem;
+}
+
+.dashboard li {
+    list-style-type: none;
+    margin-bottom: 2rem;
+}
+
+.dashboard i {
+    color: var(--third-color);
+    font-size: 2.5rem;
+    min-width: 5rem;
+}
+
+.dashboard h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.dashboard .secondPart {
+    display: none;
+}
+
+.dashboard .personalInfo {
+    display: none;
+}
+
+.dashboard .professionaInfo {
+    display: none;
+}
+
+.dashboard .notificationsShow {
+    display: none;
+}
+
+.dashboard .socialAccounts {
+    display: none;
+}
+
+.dashboard .privacyPolicy {
+    display: none;
+}
+
+.dashboard .personalInfo img {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 100%;
+}
+
+.dashboard .personalInfo label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.dashboard input,
+select,
+select option,
+textarea {
+    width: 100%;
+    font-size: 1.5rem;
+    height: 3rem;
+    text-indent: 1.5rem;
+    border: none;
+    outline: none;
+    background: var(--fourth-color);
+    border-radius: 0.6rem;
+}
+
+.dashboard textarea {
+    height: 20rem;
+    padding: 0.7rem 1rem;
+    resize: none;
+}
+
+.dashboard .personalInfo input::placeholder {
+    font-size: 1.5rem;
+}
+
+.dashboard .personalInfo input[_ngcontent-nhk-c61]::placeholder {
+    font-size: 1.5rem !important;
+}
+
+.dashboard .personalInfo .form-group {
+    margin-bottom: 2rem;
+}
+
+.dashboard .personalInfo .btn {
+    width: 12rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-top: 2rem;
+}
+
+.dashboard .perofessionaInfo .cusIcon {
+    min-width: 3rem;
+}
+
+.dashboard .perofessionaInfo form {
+    margin-bottom: 7rem;
+}
+
+.dashboard .perofessionaInfo h3 {
+    font-size: 1.4rem;
+}
+
+.dashboard .perofessionaInfo i {
+    color: var(--third-color);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 992px) {
+    .sidebar {
+        width: 100%;
+    }
+
+    .sidebar .nav-links li.showMenu .sub-menu {
+        width: 100%;
+    }
+
+    .sidebar .profile-details {
+        width: 100%;
+    }
+}

@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body.developer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #ecf0f3;
+    font-size: 62.5%;
+}
+.developer .wrapper,
+.developer .wrapper .img-area,
+.developer .social-icons a,
+.developer .buttons button {
+    background: #ecf0f3;
+    box-shadow: -0.3rem -0.3rem 0.7rem #ffffff, 0.3rem 0.3rem 0.5rem #ceced1;
+}
+.developer .wrapper {
+    position: relative;
+    width: 22rem;
+    padding: 2.5rem;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.developer .wrapper .icon {
+    font-size: 17px;
+    color: #31344b;
+    position: absolute;
+    cursor: pointer;
+    opacity: 0.7;
+    top: 15px;
+    height: 35px;
+    width: 35px;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 50%;
+    font-size: 16px;
+}
+
+.icon a {
+    color: #31344b;
+}
+
+.developer .wrapper .icon i {
+    position: relative;
+    z-index: 9;
+}
+.developer .wrapper .icon.arrow {
+    left: 15px;
+}
+
+.developer .wrapper .img-area {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.developer .img-area .inner-area {
+    height: calc(100% - 25px);
+    width: calc(100% - 25px);
+    border-radius: 50%;
+}
+.developer .inner-area img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.developer .wrapper .name {
+    font-size: 23px;
+    font-weight: 500;
+    color: #31344b;
+    margin: 10px 0 5px 0;
+}
+.developer .wrapper .about {
+    color: #44476a;
+    font-weight: 400;
+    font-size: 16px;
+}
+.developer .wrapper .social-icons {
+    margin: 15px 0 25px 0;
+}
+.developer .social-icons a {
+    position: relative;
+    height: 40px;
+    width: 40px;
+    margin: 0 5px;
+    display: inline-flex;
+    text-decoration: none;
+    border-radius: 50%;
+}
+.developer .social-icons a:hover::before,
+.developer .wrapper .icon:hover::before,
+.developer .buttons button:hover:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border-radius: 50%;
+    background: #ecf0f3;
+    box-shadow: inset -0.3rem -0.3rem 0.7rem #ffffff,
+        inset 0.3rem 0.3rem 0.5rem #ceced1;
+}
+.developer .buttons button:hover:before {
+    z-index: -1;
+    border-radius: 5px;
+}
+.developer .social-icons a i {
+    position: relative;
+    z-index: 3;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    line-height: 40px;
+}
+.developer .social-icons a.fb i {
+    color: #4267b2;
+}
+.developer .social-icons a.twitter i {
+    color: #1da1f2;
+}
+.developer .social-icons a.insta i {
+    color: #e1306c;
+}
+.developer .social-icons a.yt i {
+    color: #ff0000;
+}
+.developer .wrapper .buttons {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.developer .buttons button {
+    position: relative;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 12px 0;
+    color: #31344b;
+    font-size: 17px;
+    font-weight: 400;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 4;
+}
+.developer .buttons button:first-child {
+    margin-right: 10px;
+}
+.developer .buttons button:last-child {
+    margin-left: 10px;
+}
+.developer .wrapper .social-share {
+    display: flex;
+    width: 100%;
+    margin-top: 30px;
+    padding: 0 5px;
+    justify-content: space-between;
+}
+.developer .social-share .row {
+    color: #31344b;
+    font-size: 17px;
+    cursor: pointer;
+    position: relative;
+}
+.developer .social-share .row::before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 2px;
+    background: #e0e6eb;
+    margin-left: -25px;
+}
+.developer .row:first-child::before {
+    background: none;
+}
+.developer .social-share .row i.icon-2 {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    color: #31344b;
+    transform: translateY(-50%);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+.developer .row:nth-child(1):hover i.fa-heart,
+.developer .row:nth-child(2):hover i.fa-comment {
+    opacity: 1;
+    pointer-events: auto;
+}

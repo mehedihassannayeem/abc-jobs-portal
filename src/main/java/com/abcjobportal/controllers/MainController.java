@@ -94,7 +94,6 @@ public class MainController {
 	// landing page
 	@RequestMapping("/")
 	public String landingPage(Model model) {
-		System.out.println("\r\r\r---------------------INDEX--------------------------\r\r\r");
 		model.addAttribute("jobDetails", this.jobsDetailService.getJob(1));
 		model.addAttribute("searchedJobs", this.userFoundJobsServices.getAllFoundJobs());
 

@@ -1,0 +1,104 @@
+.nfProCard,
+.newsfeedPostForm,
+.nfAdsCard,
+.newsfeedSectionContainer {
+    box-shadow: 0 0 0.9rem 0.3rem var(--fourth-color) !important;
+}
+
+.nfAdsCard img {
+    width: 100%;
+}
+
+.nfProCard h4 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.nfProCard h6 {
+    font-size: 1.8rem;
+    font-weight: lighter;
+    margin: 1rem 0rem;
+}
+
+.nfProCard p {
+    text-align: justify;
+    font-size: 1.4rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nfProCard i {
+    color: var(--third-color);
+}
+
+.newsfeedPostForm {
+    height: 35;
+}
+
+.newsfeedPostForm input,
+.newsfeedPostForm textarea,
+.newsfeedPostForm input:focus {
+    width: 100%;
+    font-size: 1.5rem;
+    height: 3rem;
+    text-indent: 1.5rem;
+    border: none;
+    outline: none;
+    background: var(--fourth-color);
+    border-radius: 0.6rem;
+}
+
+.newsfeedPostForm textarea {
+    height: 22rem;
+    padding: 0.7rem 1rem;
+    resize: none;
+}
+
+.newsfeedPostForm p > i {
+    color: var(--third-color);
+}
+
+.newsfeedPostForm p:hover > i {
+    color: white;
+}
+
+.newsfeedSection {
+    box-shadow: 0 0 0.9rem 0.3rem var(--fourth-color) !important;
+}
+
+.proUserImage {
+    width: 15rem;
+    height: 15rem;
+}
+.postUserImage {
+    width: 10rem;
+    height: 10rem;
+}
+.newsUserImage {
+    width: 7rem;
+    height: 7rem;
+}
+.adsImage {
+    max-width: 25rem;
+    display: block;
+    margin: auto;
+}
+.commentImage {
+    width: 5rem;
+    height: 5rem;
+}
+
+textarea#userCommentBox {
+    width: 100%;
+    font-size: 1.5rem;
+    height: 3rem;
+    text-indent: 1.5rem;
+    border: none;
+    outline: none;
+    background: var(--fourth-color);
+    border-radius: 0.6rem;
+    padding: 0.7rem 1rem;
+    resize: none;
+}

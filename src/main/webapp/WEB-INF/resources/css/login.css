@@ -1,0 +1,126 @@
+.container.logPage  {
+    background: linear-gradient(
+            rgba(255, 255, 255, 0.5),
+            rgba(255, 255, 255, 0.5)
+        ),
+        url("../images/abc-content/log.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logPage img {
+    width: 9rem;
+}
+
+.logPage h2 {
+    font-size: 3rem;
+}
+
+.logPage input[type="text"],
+.logPage input[type="password"] {
+    width: 95%;
+    height: 5rem;
+    border: none;
+    outline: none;
+    border-bottom: 0.3rem solid var(--fourth-color);
+    margin: 1.5rem 0;
+    font-size: 1.6rem;
+    text-indent: 1.5rem;
+    letter-spacing: 0.1rem;
+}
+
+.logPage input[type="checkbox"] + span {
+    font-size: 1.7rem;
+    margin-left: 1.5rem;
+}
+
+.logPage input[type="checkbox"]:checked + span {
+    color: var(--third-color);
+    font-weight: bolder;
+}
+
+.logPage input[type="submit"] {
+    font-size: 2rem;
+    color: var(--primary-color);
+    border: none;
+    outline: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 1rem;
+    font-weight: bolder;
+    transition: all 0.3s;
+}
+
+.logPage .leftSide {
+    margin-top: 15%;
+}
+
+.logPage .leftSide > div {
+    margin-bottom: 5rem;
+}
+
+.logPage .leftSide h2 {
+    font-weight: bolder;
+    font-size: 3.5rem;
+}
+
+.logPage .leftSide p {
+    font-size: 2.5rem;
+}
+
+.logPage .info {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.logPage input[type="submit"]:hover {
+    color: var(--third-color);
+}
+
+.logPage form p {
+    font-size: 1.6rem;
+}
+
+.logPage form p a {
+    color: black;
+    text-decoration: underline !important;
+    text-decoration-thickness: 0.2rem !important;
+    text-decoration-color: var(--primary-color) !important;
+    text-underline-offset: 0.3rem !important;
+    transition: all 0.2s;
+    font-weight: bolder;
+}
+
+.logPage form p a:hover {
+    text-decoration-color: tomato !important;
+}
+
+.logPage h3:nth-child(1) {
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+
+.logPage h3:nth-child(2) {
+    font-weight: bold;
+}
+
+.containerBox {
+    width: 90%;
+}
+
+.logPage i {
+    color: var(--third-color);
+    box-shadow: 0 0 0.9rem 0.3rem var(--third-color) !important;
+    padding: 0.5rem;
+    border-radius: 0.6rem;
+    transition: all 0.5s;
+    background-color: white;
+}
+
+.logPage i:hover {
+    box-shadow: 0 0 0.9rem 0.3rem var(--fourth-color) !important;
+}
+
+.logPage .btn {
+    font-size: 1.6rem;
+    width: 12rem;
+}

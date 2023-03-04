@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&family=Zen+Tokyo+Zoo&display=swap");
+
+body {
+    font-family: mostserrat;
+    background: #e7e7e7;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 10rem;
+    font-weight: bolder;
+    font-family: zen tokyo zoo;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+button.btn-lg {
+    font-size: 3rem !important;
+}
+
+h5 {
+    font-size: 2rem !important;
+}
+
+form label {
+    font-size: 1.8rem;
+}

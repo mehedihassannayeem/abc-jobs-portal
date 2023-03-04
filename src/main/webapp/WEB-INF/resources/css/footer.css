@@ -1,0 +1,84 @@
+.container-fluid.cusFooter {
+    position: relative;
+    top: 100%;
+    margin-top: 5rem;
+}
+
+.cusFooter {
+    font-size: 1.4rem;
+}
+
+.cusFooter h6 {
+    font-weight: bold;
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+}
+
+.cusFooterAddress,
+.cusFooterForm {
+    box-shadow: 0 0 1.5rem var(--fourth-color) !important;
+}
+
+.cusFooterForm form > div {
+    margin-bottom: 1.2rem;
+}
+
+.cusFooterForm form label {
+    margin-bottom: 0.3rem;
+    font-weight: bold;
+}
+
+.cusFooterForm input,
+.cusFooterForm select,
+.cusFooterForm textarea {
+    width: 100%;
+    border: none;
+    border-bottom: 0.1rem solid var(--primary-color);
+    text-indent: 0.7rem;
+}
+
+.cusFooterForm textarea {
+    height: 9rem;
+    resize: none;
+    border: 0.1rem solid var(--primary-color);
+}
+
+.cusFooterForm input[type="submit"] {
+    width: 12rem;
+    display: block;
+    margin: auto;
+    border: none;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+    text-indent: 0;
+}
+
+.cusFooterBottom li {
+    text-indent: 1rem;
+    list-style-type: none;
+    margin-bottom: 0.5rem;
+    color: var(--third-color);
+    display: flex;
+}
+
+.cusFooterBottom li i {
+    color: var(--primary-color);
+    margin-right: 0.7rem;
+    margin-bottom: 0.9rem;
+}
+
+.cusFooterDownApp img {
+    width: 10rem;
+}
+
+.cusFooterCopyrightSection {
+    box-shadow: 0 -0.5rem 1.5rem var(--fourth-color) !important;
+}
+
+.cusFooterCopyrightSection a {
+    text-decoration: underline !important;
+    text-decoration-thickness: 0.2rem !important;
+    text-underline-offset: 0.5rem !important;
+    text-decoration-color: tomato !important;
+}

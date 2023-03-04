@@ -1,0 +1,422 @@
+/* common code */
+.secHead {
+    text-align: center;
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+    background: var(--fourth-color);
+    padding: 0.7rem 0;
+}
+
+/* hero section */
+.heroSection p {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.heroSection h1 {
+    font-weight: bolder;
+    font-size: 4.5rem;
+}
+
+.heroSection .jobSearch {
+    background: var(--fourth-color);
+}
+
+.heroSection .jobSearch input {
+    width: 90%;
+    height: 5rem;
+    border: none;
+    outline: none;
+    font-size: 1.6rem;
+    text-indent: 1.5rem;
+}
+
+.heroSection .jobSearch .btn {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.heroSection .jobSearch .input {
+    height: 5rem;
+    font-size: 1.8rem;
+    background: white;
+    font-weight: bolder;
+}
+
+.heroSection .jobicons i {
+    font-size: 3rem;
+    color: var(--third-color);
+}
+
+.heroSection .jobicons p {
+    font-size: 1.4rem;
+    line-height: 1;
+    margin-left: 1.5rem;
+    color: var(--secondary-color);
+    text-transform: uppercase;
+}
+
+.heroSection .jobicons p:nth-child(2) {
+    font-size: 1.8rem;
+    font-weight: bolder;
+    color: black;
+}
+
+.heroSection .tustCom img {
+    max-width: 9rem;
+}
+
+/* job feeds and search resutls section */
+
+.JobFeedRecentSearch ul {
+    list-style-type: none;
+}
+
+.JobFeedRecentSearch .optBtn {
+    font-size: 3rem;
+    width: 27rem;
+    padding: 0.7rem 1.4rem;
+    border-radius: 0.9rem;
+    margin: 0 1rem;
+}
+
+.container.jobFeeds {
+    max-height: 80rem;
+    overflow: scroll;
+}
+
+.container.jobFeeds::-webkit-scrollbar {
+    display: none;
+}
+
+.container.jobFeeds {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.jobFeeds li {
+    list-style-type: none;
+}
+
+.jobFeeds h2,
+.jobFeeds h3,
+.jobFeeds h4 {
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.jobFeeds .leftSide .card {
+    box-shadow: 0 0 0.9rem 0.3rem var(--fourth-color) !important;
+    border: none;
+    outline: none;
+}
+
+.jobFeeds .leftSide .card .btn {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.jobFeeds .leftSide .card .btn:hover {
+    background: transparent !important;
+    color: var(--bs-primary);
+}
+
+.jobFeeds .leftSide .card p {
+    font-size: 1.6rem;
+}
+
+.jobFeeds .leftSide .card .moreSecOpt {
+    display: none;
+}
+
+.jobFeeds .rightSide .card {
+    box-shadow: 0 0 0.9rem 0.3rem var(--fourth-color) !important;
+    border: none;
+    outline: none;
+}
+
+.jobFeeds .rightSide .card .btn {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.jobFeeds .rightSide .card .btnHover:hover {
+    background: transparent !important;
+    color: var(--bs-primary);
+}
+
+.jobFeeds .rightSide .card p {
+    font-size: 1.6rem;
+}
+
+.jobFeeds .rightSide .card-body h2 {
+    font-size: 3rem;
+    margin: 1rem 0;
+}
+
+.jobFeeds .rightSide .card-body h3 {
+    font-size: 2rem;
+    margin-top: 3rem;
+    font-weight: bold;
+}
+
+.jobFeeds .rightSide .card-body p {
+    font-size: 1.6rem;
+}
+
+.jobFeeds .rightSide .card-body span {
+    font-size: 1.6rem;
+}
+
+.jobFeeds .rightSide .fvtJob {
+    color: var(--bs-primary);
+    display: block;
+    cursor: pointer;
+}
+
+.jobFeeds .rightSide .fvtJobFill {
+    color: var(--bs-primary);
+    cursor: pointer;
+    display: none;
+}
+
+.jobFeeds .rightSide .card-body .spLeft {
+    display: inline-block;
+    width: 17rem;
+    font-weight: bolder;
+}
+
+.jobFeeds .rightSide .card-body .spLeftBtm {
+    display: inline-block;
+    width: 8rem;
+    font-weight: bolder;
+}
+
+.jobFeeds .moreSec {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.jobFeeds .moreSec i {
+    color: var(--third-color);
+}
+
+.jobFeeds .fa-ellipsis-vertical {
+    z-index: 2;
+    cursor: help;
+}
+
+.jobFeeds .moreSec ul {
+    margin-right: 1rem;
+    position: absolute;
+    min-width: 19rem;
+    top: 3rem;
+    right: 0;
+    font-size: 1.5rem;
+    z-index: 3;
+}
+
+.jobFeeds .moreSec ul li {
+    background: var(--bs-light);
+    margin: 0.5rem 0.7rem;
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    border-radius: 0.6rem;
+    font-weight: bold;
+    cursor: alias;
+}
+
+.jobFeeds .moreSec ul li i {
+    font-size: 2.2rem;
+    margin-right: 0.5rem;
+}
+.jobFeeds .recSearch .box {
+    box-shadow: 0 0 0.9rem 0.3rem var(--fourth-color) !important;
+}
+
+.recSearch .btn {
+    font-size: 2rem;
+}
+
+.recSearch .row {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.recSearch i {
+    font-size: 3rem;
+    color: var(--fourth-color);
+}
+
+.recSearch li {
+    list-style-type: none;
+}
+
+/* search by category section */
+.sbSection .card {
+    min-height: 25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.sbSection .card:hover {
+    box-shadow: 0 0 0.9rem 0.3rem var(--fourth-color) !important;
+    cursor: pointer;
+}
+
+.sbSection .card i {
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+    color: var(--third-color);
+}
+
+.sbSection .card h3 {
+    font-size: 2.5rem;
+}
+
+/* tender section */
+.tenSection .card {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center;
+    min-height: 20rem;
+    box-shadow: 0 0 0.3rem var(--secondary-color) !important;
+    cursor: pointer;
+}
+
+.tenSection .card:hover {
+    box-shadow: 0 0 0.9rem var(--secondary-color) !important;
+}
+
+.tenSection .card img {
+    width: 9rem;
+}
+
+.tenSection p {
+    font-size: 1.2rem;
+}
+
+/* internship jobs section */
+.internSection .card {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center;
+    box-shadow: 0 0 0.3rem var(--secondary-color) !important;
+    cursor: pointer;
+}
+
+.internSection .card:hover {
+    box-shadow: 0 0 0.9rem var(--secondary-color) !important;
+}
+
+.internSection .card img {
+    width: 9rem;
+}
+
+/* elearning section */
+
+.elearnSection .card img {
+    width: 18rem;
+    display: block;
+    margin: auto;
+}
+
+.elearnSection .card .btn {
+    width: 17rem;
+    font-size: 2rem;
+}
+
+.elearnSection .card i.fa-solid {
+    color: var(--third-color);
+}
+
+/* career development section */
+.carDev h2 {
+    font-size: 2.2rem;
+}
+
+.carDev img {
+    width: 9rem;
+}
+
+.carDev p {
+    font-size: 1.8rem;
+    margin-left: 2rem;
+}
+
+/* join us section */
+.joinUs h2 {
+    font-size: 2.4rem;
+}
+
+.joinUs p {
+    font-size: 1.4rem;
+}
+
+.joinUs .btn {
+    font-size: 1.8rem;
+    width: 15rem;
+}
+
+.joinUs img {
+    height: 35rem;
+}
+
+.joinUs .imgBtn {
+    width: 10rem;
+    height: auto;
+    margin: 0 1rem;
+}
+
+.joinUs .imgBtn:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+/* success stories section */
+
+.sucStore img {
+    width: 100%;
+    height: 50rem;
+}
+
+.carousel-control-next-icon {
+    height: 3rem;
+}
+
+.carousel-control-prev-icon {
+    height: 3rem;
+    color: var(--fourth-color) !important;
+}
+
+.sucStore .carousel-caption h5 {
+    font-size: 3rem;
+}
+
+.sucStore .carousel-caption {
+    color: var(--third-color);
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+/* client review section */
+.revCard {
+    box-shadow: 0 0 0.9rem 0.3rem var(--fourth-color) !important;
+}
+
+.revCard img {
+    width: 100%;
+}
+
+.revCard h4 {
+    font-size: 2.5rem;
+}
+
+.revCard p {
+    text-align: justify;
+    font-size: 1.8rem;
+}
